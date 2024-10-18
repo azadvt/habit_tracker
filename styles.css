@@ -108,7 +108,7 @@ h1 {
 }
 
 .habit-table-container::-webkit-scrollbar {
-	height: 2px;
+	height: 1.2px;
 }
 
 .habit-table-container::-webkit-scrollbar-thumb {
