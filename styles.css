@@ -134,10 +134,6 @@ footer p {
 	margin-top: 10px;
 }
 
-.delete-button:hover {
-	background-color: #ff1a1a;
-}
-
 @media (max-width: 600px) {
 	.container {
 		margin: 10px;
