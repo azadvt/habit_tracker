@@ -59,6 +59,7 @@ function renderHabits() {
                     </tbody>
                 </table>
             </div>
+            <button class="delete-button" data-index="${index}">Delete</button>
         `;
 		habitList.appendChild(habitDiv);
 
@@ -66,6 +67,15 @@ function renderHabits() {
 		tableContainer.addEventListener('wheel', (event) => {
 			event.preventDefault();
 			tableContainer.scrollLeft += event.deltaY;
+		});
+	});
+
+	document.querySelectorAll('.delete-button').forEach((button) => {
+		button.addEventListener('click', (event) => {
+			const habitIndex = event.target.dataset.index;
+			habits.splice(habitIndex, 1);
+			localStorage.setItem('habits', JSON.stringify(habits));
+			renderHabits();
 		});
 	});
 

@@ -137,6 +137,20 @@ footer p {
 	font-size: 14px;
 }
 
+.delete-button {
+	background-color: #000000;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.delete-button:hover {
+	background-color: #ff1a1a;
+}
+
 @media (max-width: 600px) {
 	.container {
 		margin: 10px;
